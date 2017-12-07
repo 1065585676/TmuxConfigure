@@ -89,10 +89,13 @@ bind -n S-Left previous-window
 bind -n S-Right next-window
 
 # 开启鼠标支持， 使用鼠标直接选择 window 和 panel， 以及调整 panel 大小
-set -g mode-mouse on
-set -g mouse-resize-pane on
-set -g mouse-select-pane on
-set -g mouse-select-window on
+# befor tmux version 2.1
+# set -g mode-mouse on
+# set -g mouse-resize-pane on
+# set -g mouse-select-pane on
+# set -g mouse-select-window on
+# tmux version 2.1 and later
+set -g mouse on
 
 # 前缀+v， 左右分屏， 前缀+h， 上下分屏
 bind-key v split-window -h
