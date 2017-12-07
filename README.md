@@ -35,7 +35,7 @@ $ tmux a -t <session_name>
 // 新建窗口
 快捷键 ctrl+b, c
 
-// 关闭当前窗口, 会关闭所有panel
+// 关闭当前窗口, 会关闭所有pane
 快捷键 ctrl+b, &
 
 // 切换到上一个窗口
@@ -48,19 +48,19 @@ $ tmux a -t <session_name>
 快捷键 ctrl+b, <num>
 ```
 
-**Panel**
+**Pane**
 
 ```
-// 左右panel
+// 左右pane
 快捷键 ctrl+b, %
 
-// 上下panel
+// 上下pane
 快捷键 ctrl+b, "
 
-// 关闭当前panel
+// 关闭当前pane
 快捷键 ctrl+b, x
 
-// panel间切换
+// pane间切换
 快捷键 ctrl+b, ↑、↓、←、→
 ```
 
@@ -78,7 +78,7 @@ unbind-key C-b
 # 按两次 ctrl+a 执行原意ctrl+a
 bind-key C-a send-prefix
 
-# 按住 alt 键， 使用箭头控制panel选择
+# 按住 alt 键， 使用箭头控制pane选择
 bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
@@ -88,7 +88,7 @@ bind -n M-Down select-pane -D
 bind -n S-Left previous-window
 bind -n S-Right next-window
 
-# 开启鼠标支持， 使用鼠标直接选择 window 和 panel， 以及调整 panel 大小
+# 开启鼠标支持， 使用鼠标直接选择 window 和 pane， 以及调整 pane 大小
 # befor tmux version 2.1
 # set -g mode-mouse on
 # set -g mouse-resize-pane on
